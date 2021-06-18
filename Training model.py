@@ -16,6 +16,6 @@ for i, files in enumerate(onlyfiles):
 
 Labels = np.asarray(Labels, dtype=np.int32)
 
-shresth_model  = cv2.face_LBPHFaceRecognizer.create()
-shresth_model.train(np.asarray(Training_Data), np.asarray(Labels))
+model  = cv2.face_LBPHFaceRecognizer.create()
+model.train(np.asarray(Training_Data), np.asarray(Labels))
 print("Model trained sucessefully")
